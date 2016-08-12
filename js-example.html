@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Example</title>
+    <script>
+      function myFunction() {
+        var image = document.getElementById("pic");
+		var doggo = "http://i.imgur.com/222qEBh.jpg";
+		var dorrito= "http://img.ifcdn.com/images/a86f010af7e4fc1e0038bebc6b0e1d5e23bff00791d602082fea196c6c4f64d3_1.jpg";
+		
+		if (image.src == doggo){
+			image.src = dorrito;
+			image.alt = "Meghana";
+	  }
+	  else {
+			image.src = doggo;
+			image.alt = "dorrito";
+	  }
+	  }
+    </script>
+  </head>
+  <body>
+    <h1 id="welcome">Welcome!</h>
+	<button id="btn" onclick="myFunction()">Click me!</button><br><br>
+	<img id= "pic" src="http://i.imgur.com/222qEBh.jpg" alt="Meghana" style= "width:478px;height:396px;"></h1>
+  </body>
+</html>
